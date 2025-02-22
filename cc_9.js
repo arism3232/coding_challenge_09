@@ -44,3 +44,17 @@ console.log(mgr1.getDetails());
 
 console.log(mgr1.calculateBonus()); 
 // Expected output: 9600
+
+// Task3- Creating a Company Class
+class Company {
+    constructor(name) {
+        this.name = name;
+        this.employee = [];
+    }
+    addEmployee(employee) {
+        this.employee.push(employee);
+    }
+    listEmployees() {
+        this.employee.forEach(employee => console.log(employee.getDetails()));
+    }
+}
